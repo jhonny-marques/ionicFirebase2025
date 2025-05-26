@@ -1,0 +1,7 @@
+{
+  "name": "appFirebaseNovo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

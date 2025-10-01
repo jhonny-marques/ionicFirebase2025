@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { DataService, Item } from '../services/data.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ export class HomePage {
   constructor(
     private dataService: DataService,
     private router: Router,
-    private alertController: AlertController
+    private alertController: AlertController,
+    private auth: AuthService
   ) {}
 
   ngOnInit() {
@@ -53,5 +55,10 @@ export class HomePage {
       ],
     });
     await alert.present();
+  }
+  
+  logout(){
+      this.auth.logout().then(() => {
+    this.router.navigateByUrl('/login')})
   }
 }

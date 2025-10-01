@@ -5,15 +5,15 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-  apiKey: "AIzaSyCEoX4-3hc5LefJ_LPlA6Q3Z8Jtex_6m3k",
-  authDomain: "ionicfirebasenovo.firebaseapp.com",
-  projectId: "ionicfirebasenovo",
-  storageBucket: "ionicfirebasenovo.firebasestorage.app",
-  messagingSenderId: "1018227321208",
-  appId: "1:1018227321208:web:fa0155fd04fd636b2a408d",
-  measurementId: "G-ERHZ6MWG3T"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
+  }
 }
-};
 
 /*
  * For easier debugging in development mode, you can import the following file
